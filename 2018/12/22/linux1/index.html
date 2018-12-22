@@ -173,7 +173,7 @@
         <div class="row col-md-offset-2">
             <div class="col-md-8">
     			<span class="post-meta">
-      <time datetime="2018-12-22T14:20:38.836Z" itemprop="datePublished">
+      <time datetime="2018-12-22T14:25:31.505Z" itemprop="datePublished">
           2018-12-22
       </time>
     
@@ -182,12 +182,14 @@
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<h1 id="Linux-常用命令总结"><a href="#Linux-常用命令总结" class="headerlink" title="Linux  常用命令总结"></a>Linux  常用命令总结</h1><h2 id="1-定期执行脚本"><a href="#1-定期执行脚本" class="headerlink" title="1.定期执行脚本"></a>1.定期执行脚本</h2><h3 id="1）crom-时间表：min-hour-dayofmonth-month-dayofweek-command"><a href="#1）crom-时间表：min-hour-dayofmonth-month-dayofweek-command" class="headerlink" title="1）crom 时间表：min    hour dayofmonth month dayofweek command"></a>1）crom 时间表：min    hour dayofmonth month dayofweek command</h3><p>每天上午10:15：15 10 <em> </em> <em> command<br>每周一上午10:15；  15 10 </em> <em> 1 command<br>每月最后一天：00 12 </em> <em> </em>  if [ ‘date + %d -d tomorrow’ = 01] ; then ; command</p>
-<h3 id="2-crontab-l-列出已有的时间表"><a href="#2-crontab-l-列出已有的时间表" class="headerlink" title="2) crontab -l 列出已有的时间表"></a>2) crontab -l 列出已有的时间表</h3><h3 id="3）crontab-e-添加相应任务"><a href="#3）crontab-e-添加相应任务" class="headerlink" title="3）crontab -e 添加相应任务"></a>3）crontab -e 添加相应任务</h3><h3 id="4）开启crontab服务：service-crond-start"><a href="#4）开启crontab服务：service-crond-start" class="headerlink" title="4）开启crontab服务：service crond start"></a>4）开启crontab服务：service crond start</h3><h3 id="5）关闭服务：service-crond-stop"><a href="#5）关闭服务：service-crond-stop" class="headerlink" title="5）关闭服务：service crond stop"></a>5）关闭服务：service crond stop</h3><h3 id="6）重启服务：service-crond-restart"><a href="#6）重启服务：service-crond-restart" class="headerlink" title="6）重启服务：service crond restart"></a>6）重启服务：service crond restart</h3><h3 id="7）加入开机自启动：chkconfig-level-35-crond-on"><a href="#7）加入开机自启动：chkconfig-level-35-crond-on" class="headerlink" title="7）加入开机自启动：chkconfig -level 35 crond on"></a>7）加入开机自启动：chkconfig -level 35 crond on</h3><h2 id="2-nohup-不挂断，退出账户时进程还不会结束"><a href="#2-nohup-不挂断，退出账户时进程还不会结束" class="headerlink" title="2. nohup 不挂断，退出账户时进程还不会结束"></a>2. nohup 不挂断，退出账户时进程还不会结束</h2><h2 id="3-处理信号"><a href="#3-处理信号" class="headerlink" title="3. 处理信号"></a>3. 处理信号</h2><h3 id="1）-1-SIGHUP-挂起进程"><a href="#1）-1-SIGHUP-挂起进程" class="headerlink" title="1） 1 SIGHUP 挂起进程"></a>1） 1 SIGHUP 挂起进程</h3><pre><code>    2 SIGINT 终止进程
-    3 SIGQUIT 停止进程
-   9 SIGKILL 无条件终止进程
-kill -9 进程号
-</code></pre><h1 id="4-重定向"><a href="#4-重定向" class="headerlink" title="4.重定向"></a>4.重定向</h1><h3 id="file1-gt-file2-file1内容输入到file2"><a href="#file1-gt-file2-file1内容输入到file2" class="headerlink" title="file1 &gt; file2  file1内容输入到file2"></a>file1 &gt; file2  file1内容输入到file2</h3><h3 id="file1-lt-file2-file2内容输入到file1"><a href="#file1-lt-file2-file2内容输入到file1" class="headerlink" title="file1 &lt; file2  file2内容输入到file1"></a>file1 &lt; file2  file2内容输入到file1</h3>
+      		<p> title: Linux  常用命令总结</p>
+<h2 id="1-定期执行脚本"><a href="#1-定期执行脚本" class="headerlink" title="1.定期执行脚本"></a>1.定期执行脚本</h2><h3 id="1）crom-时间表：min-hour-dayofmonth-month-dayofweek-command"><a href="#1）crom-时间表：min-hour-dayofmonth-month-dayofweek-command" class="headerlink" title="1）crom 时间表：min    hour dayofmonth month dayofweek command"></a>1）crom 时间表：min    hour dayofmonth month dayofweek command</h3><p>每天上午10:15：15 10 <em> </em> <em> command<br>每周一上午10:15；  15 10 </em> <em> 1 command<br>每月最后一天：00 12 </em> <em> </em>  if [ ‘date + %d -d tomorrow’ = 01] ; then ; command</p>
+<h3 id="2-crontab-l-列出已有的时间表"><a href="#2-crontab-l-列出已有的时间表" class="headerlink" title="2) crontab -l 列出已有的时间表"></a>2) crontab -l 列出已有的时间表</h3><h3 id="3）crontab-e-添加相应任务"><a href="#3）crontab-e-添加相应任务" class="headerlink" title="3）crontab -e 添加相应任务"></a>3）crontab -e 添加相应任务</h3><h3 id="4）开启crontab服务：service-crond-start"><a href="#4）开启crontab服务：service-crond-start" class="headerlink" title="4）开启crontab服务：service crond start"></a>4）开启crontab服务：service crond start</h3><h3 id="5）关闭服务：service-crond-stop"><a href="#5）关闭服务：service-crond-stop" class="headerlink" title="5）关闭服务：service crond stop"></a>5）关闭服务：service crond stop</h3><h3 id="6）重启服务：service-crond-restart"><a href="#6）重启服务：service-crond-restart" class="headerlink" title="6）重启服务：service crond restart"></a>6）重启服务：service crond restart</h3><h3 id="7）加入开机自启动：chkconfig-level-35-crond-on"><a href="#7）加入开机自启动：chkconfig-level-35-crond-on" class="headerlink" title="7）加入开机自启动：chkconfig -level 35 crond on"></a>7）加入开机自启动：chkconfig -level 35 crond on</h3><h2 id="2-nohup-不挂断，退出账户时进程还不会结束"><a href="#2-nohup-不挂断，退出账户时进程还不会结束" class="headerlink" title="2. nohup 不挂断，退出账户时进程还不会结束"></a>2. nohup 不挂断，退出账户时进程还不会结束</h2><h2 id="3-处理信号"><a href="#3-处理信号" class="headerlink" title="3. 处理信号"></a>3. 处理信号</h2><h3 id="1）"><a href="#1）" class="headerlink" title="1）"></a>1）</h3><pre><code>#### 1 SIGHUP 挂起进程
+ #### 2 SIGINT 终止进程
+ #### 3 SIGQUIT 停止进程
+#### 9 SIGKILL 无条件终止进程
+    #### kill -9 进程号
+</code></pre><h2 id="4-重定向"><a href="#4-重定向" class="headerlink" title="4.重定向"></a>4.重定向</h2><h3 id="file1-gt-file2-file1内容输入到file2"><a href="#file1-gt-file2-file1内容输入到file2" class="headerlink" title="file1 &gt; file2  file1内容输入到file2"></a>file1 &gt; file2  file1内容输入到file2</h3><h3 id="file1-lt-file2-file2内容输入到file1"><a href="#file1-lt-file2-file2内容输入到file1" class="headerlink" title="file1 &lt; file2  file2内容输入到file1"></a>file1 &lt; file2  file2内容输入到file1</h3>
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
