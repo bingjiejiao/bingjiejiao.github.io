@@ -173,8 +173,8 @@
         <div class="row col-md-offset-2">
             <div class="col-md-8">
     			<span class="post-meta">
-      <time datetime="2019-02-18T15:53:59.165Z" itemprop="datePublished">
-          2019-02-18
+      <time datetime="2019-03-03T09:57:37.177Z" itemprop="datePublished">
+          2019-03-03
       </time>
     
 </span>
@@ -182,30 +182,18 @@
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<p>插入排序</p>
-<p>基本思想：n个待排序序列看成一个有序表和一个无序表，开始时有序表为1个元素，无序表为n-1个元素，排序过程中每次从无序表中取出一个元素插入到有序表中，并和有序表中元素比较大小，重复n-1次</p>
-<p>代码实现<br> public class insertSort(){<br> public void insertSort(int[] arr){<br>         int temp;<br>         int n=arr.length<br>         for(int i=1;i&lt;n;i++){</p>
-<pre><code>    for(int j=0;j&lt;i;j++){
-    if(a[j]&gt;a[i]){
-    temp=a[j];
-    a[j]=a[i];
-    a[i]=temp;
-
-    }
-}
-</code></pre><p>}<br>}<br>}<br>}</p>
+      		<p>mock框架运行遇到的错误</p>
+<p>1、端口号错误<br>java -jar ./&lt;moco框架&gt; -http -p 端口号 -c json文件<br>json文件和moco框架尽量在同级目录<br>解决办法：运行命令修改端口号</p>
+<p>2、request请求错误<br>java -jar…执行成功，但运行url会返回400<br>解决办法：查看request请求是否错误，比如我在写json文件时，因为request请求中包含cookie信息，但实际上mock的网站并没有带cookie，所以导致运行url时显示400错误</p>
+<p>3、乱码问题<br>运行url时中文出现乱码<br>解决办法：在response请求里添加<br>“headers”: {<br>        “Content-Type”: “text/html;charset=gbk”<br>      }</p>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
         <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
     
-    <a class="pull-left" href="/2019/03/03/mock框架运行遇到的错误/" style="float: left;">
-        ← 
-    </a>
     
-    
-    <a class="pull-right" href="/2019/02/18/SelectSort/">
+    <a class="pull-right" href="/2019/02/18/insertSort/">
          →
     </a>
     
